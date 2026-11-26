@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Documento com 3 páginas</title>
+
+<style>
+    @page {
+        size: A4;
+        margin: 100px 40px 80px 40px;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .cabecalho {
+        position: fixed;
+        top: -80px;
+        left: 0;
+        right: 0;
+        height: 60px;
+        border-bottom: 1px solid #000;
+        text-align: center;
+    }
+
+    .rodape {
+        position: fixed;
+        bottom: -60px;
+        left: 0;
+        right: 0;
+        height: 40px;
+        border-top: 1px solid #000;
+        text-align: center;
+    }
+
+    .pagina {
+        page-break-after: always;
+        min-height: 900px;
+    }
+
+    .pagina:last-child {
+        page-break-after: auto;
+    }
+</style>
+</head>
+
+<body>
+
+<header class="cabecalho">
+    <h3>Meu Cabeçalho</h3>
+</header>
+
+<footer class="rodape">
+    Meu Rodapé
+</footer>
+
+<section class="pagina">
+    <h2>Página 1</h2>
+    <p>Conteúdo da primeira página.</p>
+</section>
+
+<section class="pagina">
+    <h2>Página 2</h2>
+    <p>Conteúdo da segunda página.</p>
+</section>
+
+<section class="pagina">
+    <h2>Página 3</h2>
+    <p>Conteúdo da terceira página.</p>
+</section>
+
+</body>
+</html>
